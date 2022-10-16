@@ -1,7 +1,7 @@
 
 # HACKTOBERFEST 2022
 
-Encode WEB-Dev is a open source project which contains different projects of Html, CSS, Javascript and MERN Stack etc. which makes your it easier for the students to learn and explore different projects in the field of WEB etc. You can submit your projects or raise/claim issues on existing projects
+Encode WEB-Dev is an open source project which contains different projects of Html, CSS, Javascript and MERN Stack etc. which makes your it easier for the students to learn and explore different projects in the field of WEB etc. You can submit your projects or raise/claim issues on existing projects
 
 
 ## Introduction
