@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,400,600|Roboto:300,400,700');
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Work+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+* {
+  color: white;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: 400;
+}
+
+body {
+  background-image: url('../images/bgimg-final.png') !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Crimson Pro', serif;
+
+  /* font-weight: 700; */
+}
+
+p,
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+}
+
+.main-text h1 {
+  font-size: 3.5rem;
+}
+
+main {
+  height: 100vh;
+}
+
+.main-text p {
+  font-size: 1.5rem;
+}
+
+main .container .main-text a {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 32px;
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(77, 69, 199, 0.25);
+  margin-top: 15px;
+  border-radius: 20px;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Navbar */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* transition: 1s; */
+  /* background-image: url(../images/bg\ image\ \(2\).jpg); */
+  /* background-color: rgb(32, 34, 136);   */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu>a:hover,
+.dropdown-menu>a:focus {
+  background-color: rgba(77, 69, 199, 0.25);
+}
+
+.navbar-scrolled {
+  background-color: rgb(27, 25, 63);
+  ;
+  transition: 0.3s;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-link,
+.dropdown-item {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.navbar-nav>.active {
+  background-color: rgba(1, 1, 7, 0.329);
+}
+
+.nav-item {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+}
+
+nav li {
+  padding: 0 18px;
+}
+
+nav li.active,
+nav li.active:before {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+
+footer i {
+  color: #fff;
+  padding: 0 12px;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  background-color: rgba(27, 25, 63, 0.61);
+  ;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: 50px 100px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-rows: auto;
+}
+
+.footer-links>a {
+  text-decoration: none;
+}
+F
+.footer-logo {
+  position: relative;
+  align-items: center;
+}
+
+
+/* -------------- Cards -------------- */
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  /* background: #232427; */
+}
+
+.con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+  /* padding: 10px 16px; */
+}
+
+.con .cards {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  /* box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2), inset -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1); */
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.con .cards .box {
+  background-image: url(../images/bg\ image\ \(5\).jpg);
+  position: absolute;
+  align-items: center;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  /* background: #2a2b2f; */
+  border: 2px solid rgb(18, 15, 68);
+  ;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  transition: 0.5s;
+}
+
+.con .cards .box:hover {
+  transform: translate3d(0px, -40px, 100px);
+  box-shadow: 0 1mm 4mm rgba(77, 69, 199, 0.5);
+  ;
+  /* filter: drop-shadow(0 -1mm 4mm rgba(77, 69, 199)); */
+  transform: scale(1.12);
+  transition: 0.5s;
+  /* background-image: linear-gradient(var(--rotate), #EADEDB 0%, #BC70A4 50%, #BFD641 75%); */
+}
+
+.con .cards:hover {
+  transition: 0.5s;
+  box-shadow: none;
+}
+
+.con .cards .box .content {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.con .cards .box .content h2 {
+  font-size: 1.8em;
+  color: rgba(255, 255, 255, 0.712);
+  z-index: 4;
+  transition: 0.5s;
+}
+
+.con .cards .box .content p {
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.644);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.con .cards .box .content .up {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 60px;
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(77, 69, 199, 0.25);
+  margin-top: 15px;
+  border-radius: 20px;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.con .cards .box .content .down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 10px;
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(77, 69, 199, 0.25);
+  margin-top: 15px;
+  border-radius: 20px;
+  font-family: 'Open Sans';
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Cards */
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+
+/* Algorithm Pages */
+
+.simulate {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 32px;
+  width: fit-content;
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(77, 69, 199, 0.25);
+  margin-top: 15px;
+  border-radius: 20px;
+  font-family: 'Open Sans';
+  font-size: 1.5rem;
+  text-decoration: none !important;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.simulate:hover {
+  color: white;
+}
