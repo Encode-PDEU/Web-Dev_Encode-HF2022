@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS LAB SIMULATOR</title>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/website_logo1.png">
+</head>
+
+<body>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <div class="hover-border">OS LAB SIMULATOR</div>
+            </a>
+            <div class="divider"></div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            ALGORITHMS
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="./fifo.html">FIFO</a></li>
+                            <li><a class="dropdown-item" href="./lru.html">LRU</a></li>
+                            <li><a class="dropdown-item" href="./optimal.html">OPTIMAL</a></li>
+                            <li><a class="dropdown-item" href="./lifo.html">LIFO</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="d-flex">
+                    <div class="dropdown">
+                        <input id="search-input" class="form-control me-2 dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false" placeholder="Type to search...">
+                        <ul id="suggestions" class="dropdown-menu dropdown-menu-dark" aria-labelledby="search-button">
+                        </ul>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16" style="position: absolute; right: 15px;">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="info-block">
+        <div class="mid-heading-wrapper">
+            <div class="mid-heading">
+                <h1 style="margin: 0px;">ABOUT</h1>
+            </div>
+        </div>
+
+        <div class="infocard">
+            <div class="infocard-body">
+                <p>In a computer operating system that uses paging for virtual memory management, page replacement
+                    algorithms decide which memory pages to page out, sometimes called swap out, or write to disk, when
+                    a page of memory needs to be allocated.</p>
+
+                <p>Page replacement happens when a requested page is not in memory (page fault) and a free page cannot
+                    be used to satisfy the allocation, either because there are none, or because the number of free
+                    pages is lower than some threshold</p>
+
+
+            </div>
+        </div>
+
+        <div class="infocard">
+            <div class="infocard-body">
+                <p style="font-weight: 700;">Page Replacement is important because:</p>
+
+                <p>1. It helps the OS to decide which memory page can be moved out, making space for the currently
+                    needed
+                    page.</p>
+
+                <p>2. The ultimate objective of all page replacement algorithms is to reduce the number of page faults.
+                </p>
+
+
+            </div>
+        </div>
+
+        <div class="infocard">
+            <div class="infocard-body">
+                <p style="font-weight: 700;"> Important term for page replacement:</p>
+
+                <p style="font-weight: 700;">Page fault:</p>
+                <p>A page fault occurs when a program attempts to access a block of memory that is not stored in the
+                    physical memory, or RAM.
+                </p>
+                <p>The fault notifies the operating system that it must locate the data in
+                    virtual memory, then transfer it from the storage device, such as an HDD or SSD, to the system RAM.
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="mid-blockDSPR">
+        <div class="mid-heading-wrapper">
+            <div class="mid-heading">
+                <h1 class="hover-border">ALGORITHMS</h1>
+            </div>
+        </div>
+
+        <div class="cardsDSPR" style="margin-top: 0px; width: 90%;">
+
+            <a href="fifo.html" style="text-decoration: none;">
+                <div class="card text-white bg-success algo-cards"
+                    style="width: 14rem; height: 14rem; margin-left: 40px; margin-right: 40px;">
+                    <div class="algo-heading">FIFO</div>
+                    <div class="card-body" style="overflow-y: scroll;">
+                        <p class="card-text">During replacement the oldest page is replaced by the new page.</p>
+                        <div class="algo-card-footer">
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="lru.html" style="text-decoration: none;">
+                <div class="card text-white bg-warning algo-cards"
+                    style="width: 14rem; height: 14rem; margin-left: 40px; margin-right: 40px;">
+                    <div class="algo-heading">LRU</div>
+                    <div class="card-body" style="overflow-y: scroll;">
+                        <p class="card-text">The least reffered page is replaced by the new page.
+                        </p>
+                    </div>
+                    <div class="algo-card-footer">
+                    </div>
+                </div>
+            </a>
+
+            <a href="optimal.html" style="text-decoration: none;">
+                <div class="card text-white bg-info algo-cards"
+                    style="width: 14rem; height: 14rem; margin-left: 40px; margin-right: 40px;">
+                    <div class="algo-heading">OPTIMAL</div>
+                    <div class="card-body" style="overflow-y: scroll;">
+                        <p class="card-text">The page which is not going to be used in future will be replaced by the
+                            new page.</p>
+                    </div>
+                    <div class="algo-card-footer">
+                    </div>
+                </div>
+            </a>
+
+            <a href="lifo.html" style="text-decoration: none;">
+                <div class="card text-white bg-danger algo-cards"
+                    style="width: 14rem; height: 14rem; margin-left: 40px; margin-right: 40px;">
+                    <div class="algo-heading">LIFO</div>
+                    <div class="card-body" style="overflow-y: scroll;">
+                        <p class="card-text">During replacement the top most page in the stack is replaced first.</p>
+                    </div>
+                    <div class="algo-card-footer">
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <script src="js/search.js"></script>
+    <script src="js/typewriter.js"></script>
+
+</body>
+
+</html>
