@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>OS Project</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Bot</title>
+
+  <link rel="stylesheet" href="mscbot\static\css\chat.css">
+  <link rel="stylesheet" href="mscbot\static\css\home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+
+
+
+    <div class="hero_bg_box">
+      <img src="images/Premium Vector _ Purple web development background.png" alt="">
+    </div>
+
+    <header class="header_section">
+      <div class="header_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="full">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand " href="index.html"><img width="120" src="images/amanda smith photographer.png"
+                      alt="#" /></a>
+
+                  <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class=""> </span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="algorithms.html">Algorithms</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-9 col-lg-6">
+                  <div class="detail-box">
+                    <h1>
+                      Page Replacement Algorithms
+                    </h1>
+                    <p>
+                      In an operating system that uses paging for memory management, a page replacement algorithm is
+                      needed to decide which page needs to be replaced when new page comes in. Since actual physical
+                      memory is much smaller than virtual memory, page faults happen. In case of page fault, Operating
+                      System might have to replace one of the existing pages with the newly needed page.
+                    </p>
+                    <div class="btn-box">
+                      <a href="algorithms.html" class="btn1">
+                        Learn More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CHAT BAR BLOCK -->
+      <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">Chat with us!
+          <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+          <div class="full-chat-block">
+            <!-- Message Container -->
+            <div class="outer-container">
+              <div class="chat-container">
+                <!-- Messages -->
+                <div id="chatbox">
+                  <h5 id="chat-timestamp"></h5>
+                  <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                </div>
+
+                <!-- User input box -->
+                <div class="chat-bar-input-block">
+                  <div id="userInput">
+                    <input id="textInput" class="input-box" type="text" name="msg"
+                      placeholder="Tap 'Enter' to send a message">
+                    <p></p>
+                  </div>
+
+                  <div class="chat-bar-icons">
+                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart" onclick="heartButton()"></i>
+                    <i id="chat-icon" style="color: #333;" class="fa fa-fw fa-send" onclick="sendButton()"></i>
+                  </div>
+                </div>
+                <div id="chat-bar-bottom">
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="mscbot\static\scripts\responses.js"></script>
+<script src="mscbot\static\scripts\chat.js"></script>
+
+</html>
