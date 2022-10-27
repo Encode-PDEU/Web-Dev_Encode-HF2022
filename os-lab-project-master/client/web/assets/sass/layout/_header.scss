@@ -1,0 +1,67 @@
+/* Header */
+
+	#header {
+		@include padding(5em, 0, (3em, 0, -5em, 0));
+
+		.logo {
+			display: block;
+			border-bottom: 0;
+			color: inherit;
+			font-weight: _font(weight-bold);
+			letter-spacing: _font(letter-spacing);
+			margin: 0 0 (_size(element-margin) * 1.25) 0;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+
+			> * {
+				display: inline-block;
+				vertical-align: middle;
+			}
+		}
+
+		nav {
+			position: fixed;
+			right: 2em;
+			top: 2em;
+			z-index: _misc(z-index-base);
+
+			ul {
+				@include vendor('display', 'flex');
+				@include vendor('align-items', 'center');
+				list-style: none;
+				margin: 0;
+				padding: 0;
+
+				li {
+					display: block;
+					padding: 0;
+
+					a {
+						display: block;
+						position: relative;
+						height: 3em;
+						line-height: 3em;
+						padding: 0 1.5em;
+						background-color: transparentize(_palette(bg), 0.5);
+						border-radius: _size(border-radius);
+						border: 0;
+						font-size: 0.8em;
+						font-weight: _font(weight-bold);
+						letter-spacing: _font(letter-spacing);
+						text-transform: uppercase;
+					}
+	
+				}
+			}
+		}
+
+		@include breakpoint('<=small') {
+			@include padding(3em, 0, (1em, 0, -3em, 0));
+
+			nav {
+				right: 0.5em;
+				top: 0.5em;
+			}
+		}
+	}
