@@ -1,0 +1,207 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(20, 33, 61, 0.3);
+    position: relative;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+.headText {
+    margin-left: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-20px, -50%);
+    transition: opacity 250ms ease;
+    font-weight: 600;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+    width: 50%;
+    margin-left: auto;
+}
+
+.navlinks li {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 250ms ease;
+}
+
+.navlinks li:hover {
+    background-color: #547e88;
+    transition: all 250ms ease;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../material/bg-cover2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.first-heading {
+    font-size: 3em;
+}
+
+.first-subtext {
+    margin: 1em;
+    font-weight: 400;
+}
+
+.text {
+    color: #00ccff;
+}
+
+#donate {
+    font-size: 16px;
+    padding: 16px;
+    margin: 12px;
+    margin-top: 15px;
+    background-color: #00ccff;
+    border: none;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition: 300ms ease;
+}
+
+#donate:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 2rem 5rem 0 rgba(252, 162, 17, 0.5);
+    transition: 300ms ease;
+}
+
+#donate:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .animate {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    .animate2 {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    .hidden {
+        opacity: 0;
+        pointer-events: none;
+        transition: all 300ms ease;
+    }
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    .first-heading {
+        font-size: 2em;
+        transition: all 500ms 0.4s;
+    }
+    .first-subtext {
+        transition: all 500ms 0.6s;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 10;
+    }
+    .navlinks {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background-color: rgba(20, 33, 61, 0.85);
+        flex-direction: column;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .navlinks.open {
+        clip-path: circle(1200px at 90% -20%);
+        -webkit-clip-path: circle(1200px at 90% -20%);
+        pointer-events: all;
+    }
+    .navlinks li {
+        opacity: 0;
+    }
+    .navlinks li a {
+        font-size: 25px;
+    }
+    .navlinks li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(2) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(3) {
+        transition: all 0.5s ease 0.2s;
+    }
+    .navlinks li:nth-child(4) {
+        transition: all 0.5s ease 0.2s;
+    }
+    li.fade {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .headText {
+        font-size: 1em;
+    }
+    .first-heading {
+        font-size: 1.5em;
+    }
+    .first-subtext {
+        margin-top: 1rem;
+        font-size: 0.5em;
+    }
+}
