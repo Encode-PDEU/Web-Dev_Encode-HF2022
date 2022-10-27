@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="simulate.css">
+    <!-- CSS only -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- For dynamic tables -->
+    <link rel="stylesheet" href="./tabulator/tabulator_site.min.css">
+    <script type="text/javascript" src="./tabulator/tabulator.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color:orange" href="#">CPU SCHEDULING SIMULATOR</a>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <br>
+        <div class="row align-items-center">
+            <div class="col text-center">
+                <form id="process_form" action="">
+                    <label class="form-label text-white" for="pid">Process ID:</label>
+                    <input type="number" name="pid" id="pid" autocomplete="off" required>
+                    <br>
+                    <br>
+                    <label class="form-label text-white" for="pname">Process Name:</label>
+                    <input type="text" name="pname" id="pname" autocomplete="off" required>
+                    <br>
+                    <br>
+                    <label class="form-label text-white" for="arr_time">Arrival Time:</label>
+                    <input type="text" name="arr_time" id="arr_time" autocomplete="off" required>
+                    <br>
+                    <br>
+                    <label class="form-label text-white" for="exe_time">Execution Time:</label>
+                    <input type="text" name="exe_time" id="exe_time" autocomplete="off" required>
+                    <br>
+                    <br>
+                    <button class="butn" id="add_proc" type="submit">Add Process</button>&nbsp;&nbsp;&nbsp;
+                    <br>
+                </form>
+            </div>
+
+            <div class="col text-center">
+                <form id="del_proc" action="">
+                    <label class="form-label text-white" for="pid">Process ID:</label>
+                    <input type="number" name="pid" id="pid" autocomplete="off" required>
+                    <br>
+                    <br>
+                    <button class="butn" id="del_proc" type="submit">Delete Process</button>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="text-center">
+            <form id="sim_form" action="">
+                <label class="form-label text-white" for="algo_name">Name Of Algorithm:</label>
+                <select name="algo" id="algo">
+                    <option value="FCFS">FCFS (First Come First Serve)</option>
+                    <option value="SJFP">SJF (Shortest Job First)</option>
+                    <option value="SJFN">SJF (Non Preemptive)</option>
+                    <option value="RR"> RR (Round Robin Scheduling)</option>
+                </select>
+                <br>
+                <br>
+                <button class="butn" type="submit">Simulate</button>
+            </form>
+        </div>
+
+        <br>
+        <hr class="text-white">
+
+        <h3 style="color: orange;" class="m-4">
+            Process Table
+        </h3>
+        <div class="m-3" id="process-table">
+        </div>
+
+        <br>
+        <hr class="text-white">
+
+        <h3 style="color: orange;" class="m-4">
+            Simulation Result
+        </h3>
+
+        <h6 id="order-of-exe" class="m-4 text-white">
+            Order of Execution:
+        </h6>
+        <div class="m-3" id="simulator-table">
+        </div>
+
+        <h6 id="tar-time" class="m-4 text-white">
+            Turn around Times:
+        </h6>
+        <div class="m-3" id="tar-table">
+        </div>
+
+        <h6 id="wait-time" class="m-4 text-white">
+            Waiting Times:
+        </h6>
+        <div class="m-3" id="wait-table">
+        </div>
+
+        <hr class="text-white">
+
+        <div class="m-3">
+            <h6 id="avg-wait-time" class="text-white">
+
+            </h6>
+
+            <h6 id="sim-end-time" class="text-white">
+
+            </h6>
+        </div>
+        <br>
+        <br>
+    </div>
+
+    <script src="js/simulate.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
