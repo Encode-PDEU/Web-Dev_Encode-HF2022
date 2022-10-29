@@ -1,0 +1,18 @@
+<%- include("../views/partials/header.ejs")%>
+<h1>Home</h1>
+<p> <%=homecontent%></p>
+
+<% posts.forEach((post) => { %>
+    <div style="border: 2px solid gray ; margin: 10px 5px;">
+    <h2>
+        <%= post.postTitle%>
+    </h2>
+    <span>
+        <%=post.postContent.slice(0,100)%>
+       <% if(post.postContent.length>100){ %>
+        <a href="<%= /posts/+ post._id%>">Read More</a>
+        <% } %>
+    </span>
+</div>
+<% }) %>
+<%- include('../views/partials/footer.ejs');-%>
